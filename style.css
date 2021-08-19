@@ -1,0 +1,32 @@
+/*Seletor element name UL*/
+ul{
+  list-style-type: none;
+  background-color: gray;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.486);
+  border-radius: 5px;
+}
+
+li a{
+  float: left;/*para só se aplica a elementos que geram caixas que não estão absolutamente posicionadas */
+  display: block; /*para altura*/
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li img{
+  width: 25px;
+  float: right;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+li a:hover:not(.ativa){/*para interatuar quando passa o mouse por encima das palavras com parametro de quem e ignorado nesse caso o .ativa*/
+background-color: red;
+}
+
+/*seletor de classe*/
+.ativa{
+  background-color: #252525;
+}
